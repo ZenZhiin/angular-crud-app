@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';  // For ngModel binding
-import { HttpClientModule } from '@angular/common/http';  // For HTTP calls
-import { AppRoutingModule } from './app.routes';  // Import the routing module
+import { FormsModule } from '@angular/forms';
+import { AppRoutingModule } from './app-routing.module'; 
 
 import { AppComponent } from './app.component';
 import { CreateComponent } from './components/create/create.component';
@@ -21,8 +20,7 @@ import { DeleteComponent } from './components/delete/delete.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule,
-    AppRoutingModule  // Make sure this is imported
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

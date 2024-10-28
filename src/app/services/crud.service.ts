@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class CrudService {
-  private apiUrl = 'http://localhost:3000/items';  // Replace with your API endpoint
+  private apiUrl = 'http://localhost:3000/items'; 
 
   constructor(private http: HttpClient) {}
 
