@@ -1,0 +1,6 @@
+<h2>Edit Item</h2>
+<form (ngSubmit)="updateData()">
+  <input type="text" [(ngModel)]="data.name" name="name" required />
+  <textarea [(ngModel)]="data.description" name="description" required></textarea>
+  <button type="submit">Update</button>
+</form>
