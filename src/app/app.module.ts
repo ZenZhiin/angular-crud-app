@@ -1,20 +1,20 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app.routes';
-import { FormsModule } from '@angular/forms'; // Import FormsModule
-import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
+import { AppComponent } from './app.component'; 
 import { DataManagementComponent } from './data-management/data-management.component';
 
 @NgModule({
   declarations: [
-    DataManagementComponent
+    AppComponent,
+    DataManagementComponent 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule, // Add FormsModule here
-    HttpClientModule
+    FormsModule
   ],
   providers: [],
   bootstrap: [DataManagementComponent]

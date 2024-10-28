@@ -1,22 +1,10 @@
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms'; 
-import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from './app.routes';
+import { Component } from '@angular/core';
 
-import { DataManagementComponent } from './data-management/data-management.component';
-
-@NgModule({
-  declarations: [
-    DataManagementComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule
-  ],
-  providers: [],
-  bootstrap: [DataManagementComponent]
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
 })
-export class AppModule {
-  title = 'angular-crud-app';
+export class AppComponent {
+  title = 'Angular CRUD App';
 }
