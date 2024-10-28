@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from '../../services/data.service';
-import { DataItem } from '../../models/data.model';
+import { DataService } from '../services/data.service';
+import { DataItem } from '../models/data.model';
 
 @Component({
   selector: 'app-data-management',
