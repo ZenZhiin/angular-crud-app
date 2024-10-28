@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms'; 
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app.routes';
-import { HttpClientModule } from '@angular/common/http';
 
 import { DataManagementComponent } from './data-management/data-management.component';
 
@@ -13,8 +12,7 @@ import { DataManagementComponent } from './data-management/data-management.compo
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
-    HttpClientModule
+    FormsModule
   ],
   providers: [],
   bootstrap: [DataManagementComponent]

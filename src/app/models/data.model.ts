@@ -1,5 +1,5 @@
 export interface DataItem {
-    id?: number;
+    id?: number | undefined;
     name: string;
   }
   
