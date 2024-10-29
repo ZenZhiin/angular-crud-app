@@ -6,11 +6,11 @@ import { UpdateComponent } from './components/update/update.component';
 import { DeleteComponent } from './components/delete/delete.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'view', pathMatch: 'full' },  // Default route
+  { path: '', redirectTo: 'view', pathMatch: 'full' }, 
   { path: 'create', component: CreateComponent },
   { path: 'view', component: ViewComponent },
-  { path: 'update/:id', component: UpdateComponent },  // Update route with dynamic ID
-  { path: 'delete/:id', component: DeleteComponent },  // Delete route with dynamic ID
+  { path: 'update/:id', component: UpdateComponent },  
+  { path: 'delete/:id', component: DeleteComponent }, 
 ];
 
 @NgModule({
