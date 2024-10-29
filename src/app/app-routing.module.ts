@@ -1,16 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CreateComponent } from './components/create/create.component';
-import { ViewComponent } from './components/view/view.component';
-import { UpdateComponent } from './components/update/update.component';
-import { DeleteComponent } from './components/delete/delete.component';
+import { ItemListComponent } from './components/item-list/item-list.component';
+import { ItemFormComponent } from './components/item-form/item-form.component';
+import { ItemViewComponent } from './components/item-view/item-view.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'view', pathMatch: 'full' }, 
-  { path: 'create', component: CreateComponent },
-  { path: 'view', component: ViewComponent },
-  { path: 'update/:id', component: UpdateComponent },  
-  { path: 'delete/:id', component: DeleteComponent }, 
+  { path: '', component: ItemListComponent },           
+  { path: 'create', component: ItemFormComponent },       
+  { path: 'edit/:id', component: ItemFormComponent },     
+  { path: 'view/:id', component: ItemViewComponent },    
+  { path: '**', redirectTo: '' },                         
 ];
 
 @NgModule({

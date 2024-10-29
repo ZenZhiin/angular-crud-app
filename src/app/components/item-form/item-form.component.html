@@ -1,0 +1,30 @@
+<mat-card>
+    <mat-card-title>{{ isEditMode ? 'Edit Item' : 'Create Item' }}</mat-card-title>
+  
+    <form [formGroup]="itemForm" (ngSubmit)="onSubmit()">
+      <mat-form-field appearance="fill">
+        <mat-label>Name</mat-label>
+        <input matInput formControlName="name" />
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Description</mat-label>
+        <textarea matInput formControlName="description"></textarea>
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Price</mat-label>
+        <input type="number" matInput formControlName="price" />
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Stock</mat-label>
+        <input type="number" matInput formControlName="stock" />
+      </mat-form-field>
+  
+      <button mat-raised-button color="primary" type="submit">
+        {{ isEditMode ? 'Update' : 'Create' }}
+      </button>
+    </form>
+  </mat-card>
+  
