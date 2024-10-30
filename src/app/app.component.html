@@ -1,5 +1,10 @@
 <nav>
-  <a routerLink="/create">Create Item</a> |
-  <a routerLink="/read">View Items</a>
+  <button *ngIf="!authService.isLoggedIn()" mat-button routerLink="/login">
+    Login
+  </button>
+  <button *ngIf="authService.isLoggedIn()" mat-button (click)="logout()">
+    Logout
+  </button>
 </nav>
+
 <router-outlet></router-outlet>
